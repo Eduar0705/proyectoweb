@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="icon" href="./fotos/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        <h1>Panel Administrativo</h1>
+        <form id="adminForm">
+            <div class="form-group">
+                <label for="message">Mensaje Importante:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagen:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="duration">Duración (en segundos):</label>
+                <input type="number" id="duration" name="duration" min="1" required>
+            </div>
+            <button type="submit">Agregar</button>
+        </form>
+        <div id="preview">
+            <h2>Vista previa de mensajes:</h2>
+            <ul id="messageList"></ul>
+        </div>
+    </div>
+    <script src="admi.js"></script>
+</body>
+</html>
